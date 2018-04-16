@@ -1,5 +1,4 @@
-before_install: 
-  - make dep
 language: c
-compiler: gcc
-script: make && make test
+sudo: enabled
+script: make test
+install: make dep
